@@ -1,18 +1,19 @@
+/* eslint-disable indent */
 let calculator = {
-	x: undefined,
-	y: undefined,
+	a: undefined,
+	b: undefined,
 
 	read: function (a, b) {
-		x = a;
-		y = b;
+		this.a = a;
+		this.b = b;
 	},
 
 	sum: function () {
-		return x + y;
+		return this.a + this.b;
 	},
 
 	mul: function () {
-		return x * y;
+		return this.a * this.b;
 	}
 }
 

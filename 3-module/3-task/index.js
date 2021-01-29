@@ -6,7 +6,7 @@
 function camelize(str) {
 	if (!str) return str;
 
-	array1 = str.split('-');
+	let array1 = str.split('-');
 
 	for (i = 1; i < array1.length; i++) {
 		array1[i] = array1[i].charAt(0).toUpperCase() + array1[i].slice(1);
