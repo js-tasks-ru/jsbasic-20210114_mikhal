@@ -4,5 +4,13 @@
  * @return {HTMLUListElement}
  */
 function makeFriendsList(friends) {
-  // ваш код...
+   let ul = document.createElement("ul");
+	const htmlArray = friends.map(friend => {
+		return `<li>${friend.firstName} ${friend.lastName}</li>`
+})
+	const html = htmlArray.join('')
+	ul.innerHTML = html
+	console.log(ul)
+	return ul
+
 }
