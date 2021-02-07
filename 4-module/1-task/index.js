@@ -10,7 +10,6 @@ function makeFriendsList(friends) {
 })
 	const html = htmlArray.join('')
 	ul.innerHTML = html
-	console.log(ul)
 	return ul
 
 }
