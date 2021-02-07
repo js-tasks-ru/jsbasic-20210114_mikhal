@@ -21,7 +21,8 @@ function initCarousel() {
 			leftArrow.style.display = '';
 			rightArrow.style.display = '';
 		}
-	}
+	};
+
 
 	checkArrowVisibility();
 
