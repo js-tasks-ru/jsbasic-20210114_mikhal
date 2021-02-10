@@ -10,7 +10,6 @@ function initCarousel() {
 
 	let currentImage = 1;
 
-	// leftArrow.style.display = 'none';
 
 	const checkArrowVisibility = () => {
 		if (currentImage == 1) {
@@ -29,14 +28,13 @@ function initCarousel() {
 	const moveLeft = () => {
 		carousel.style.transform = 'translateX(' + (offsetWidth - offsetWidth * (currentImage - 1)) + 'px)';
 		currentImage--;
-		console.log(currentImage);
+	
 		checkArrowVisibility();
 	};
 
 	const moveRight = () => {
 		carousel.style.transform = 'translateX(' + -offsetWidth * currentImage + 'px)';
 		currentImage++;
-		console.log(currentImage);
 		checkArrowVisibility();
 	};
 
